@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ .clear{
+    clear: both;
+}
+
+ .text-white{
+    color: #fff !important;
+ }
+ .text-black{
+    color: #000;
+ }
+ .btn{
+    text-decoration: none;
+    background-color:#FFF;
+    color: #000;
+    padding: 14px 16px;
+    margin-top: 15px;
+    display: inline-block;
+    border: none;
+
+}
+ 
+ 
+ html{
+    scroll-behavior: smooth; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#header{
+   height: 80px;
+   background-color: ghostwhite;
+   position: fixed; 
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1;
+   
+}
+#nav{
+    display: inline-block;
+    float: right;
+    
+}
+#nav li  {
+    
+    position: relative;
+}
+#nav > li{
+    display: inline-block;
+    
+}
+
+#nav, .subnav{
+    list-style-type: none; /
+}
+#nav .subnav{
+    display: none; 
+    min-width: 160px; 
+    top: 100%;
+    left: 0;
+    position: absolute;
+    background-color: #fff;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* bóng của ul*/
+}
+#nav .subnav a{
+    color: #000;
+    padding: 0 12px;
+    text-align: center;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav li:hover,#nav > li:hover > a{
+    background-color: #FF4500;
+    color:#FFF;
+    border-radius: 30px;
+}
+#nav li a{
+    
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    margin-top: 15px;
+    display: block;
+   
+    
+}
+#nav > li > a {
+  color: #000;
+  text-transform: uppercase;
+}
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
+
+
+        
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+
+}
+#header.mobile-menu-btn:hover .menu-icon{
+    color:#000;
+}
+#header .search-icon{
+    font-size: 36px;
+    margin-left: 20px;
+    color: darkgoldenrod;
+    padding: 10px 60px;
+    margin-top: 17px;
+    line-height: 77px;
+    margin-left: 15px;
+}
+
+
+.btn-header{
+    margin-left: 38px;
+    padding: 15px 40px;
+    font-size: 30px;
+}
+.btn-header:hover{
+    color: ghostwhite;
+    background-color: #FF4500 ;
+}
+
+
+
+
+/* phần 2 */
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%; 
+    background: url('/assest/img/bookcases-1869616_1280.jpg') top center /cover no-repeat; không lặp lại ảnh
+   
+}
+#slider .text-content {
+   position: absolute;
+   bottom: 300px;
+   float: left;
+   color: #fff;
+   width: 100%;
+   
+
+}
+#slider .text-heading {
+    font-weight: 600;
+    font-size: 35px;
+    margin-left: 40px;
+    color: #ffd700;
+
+}
+#slider .text-description {
+    font-size: 40px;
+    margin-top: 25px;
+    font-weight: 900;
+    margin-left: 40px;
+    text-transform: uppercase;
+}
+.btn-header{
+    margin-left: 38px;
+    padding: 12px 33px;
+    font-size: 30px;
+}
+.btn-header:hover{
+    color: ghostwhite;
+    background-color: #FF4500 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+.contract-content{
+    margin-top: 48px;
+    margin-left: 200px;
+}
+.col-third{
+    width: 33.33333%;
+}
+.col-half{
+    width: 40%;
+}
+.col-full{
+    width: 80%;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.contact-info{
+    font-size: 18px; 
+    line-height: 1.5;
+    
+}
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-section{
+    background-color: #fff;
+}
+.contact-dsesff{
+    padding-top: 64px;
+}
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline: none;/*bấm vào button sẽ mất viền màu*/
+}
+.btn{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    /*float: right;*/
+    width: 33%;
+    margin-left: 100px;
+}
+.btn:hover{
+    background-color: #f44336;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.section-heading, .section-sub-heading{
+    text-align: center;
+
+}
+.section-heading{
+    margin-top: 30px;
+}
+.section-sub-heading{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.column{
+      float: left;
+      width: 33.33333%;
+      padding: 13px 21px;
+      border-radius: 5px;
+      line-height: 2.5;
+       /* đồ mờ khi để chuột vào ảnh*/
+    cursor: pointer;
+    box-shadow: 3px 3px 5px 0px #000;
+    
+
+    
+}
+#contact{
+    
+   width: 1000px;
+   max-width: 100%;
+   padding: 64px 0;
+   margin-left: auto;
+   margin-right: auto;
+   
+   
+}
+.column:hover{
+    transform: rotate3d(2);
+}
+img{
+    border-radius: 4px;
+    
+    
+}
+.vu{
+    padding: 0px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
